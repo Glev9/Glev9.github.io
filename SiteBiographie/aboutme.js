@@ -5,7 +5,7 @@ let form=document.getElementById("formations");
 bio.addEventListener("click",function(){
     document.getElementById("titleAbout").innerText="Biography";
     let text=document.getElementById("paragraphAbout");
-    text.innerText="My name is Evan, and I was born in the town of Les Lilas, located in the Seine-Saint-Denis department in France. At 16 years old, I moved to Montpellier. \n" +
+    text.innerText="My name is Evan, and I was born in the town of Les Lilas, located in the Seine-Saint-Denis department in France on September 14th 2003. At 16 years old, I moved to Montpellier. \n" +
         "\n" +
         "                            In 2021, I obtained my baccalaureate with the specialties \"Mathematics\" and \"Computer Science\". This choice of specialties reflected my interest in mathematics and computer science, two fields that have always fascinated me. After obtaining my baccalaureate, I decided to pursue my studies in computer science. \n" +
         "\n" +
