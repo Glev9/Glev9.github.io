@@ -33,3 +33,4 @@ form.addEventListener("click",function(){
     text.innerText= "2021-2024 : BUT Computer Science \n ( Deployment of secured and communicating applications ) \n \n -IUT Montpellier-Sète" +
         "\n \n 2020-2021 : General Baccaulaureate (with honors) \n ( Mathematics and Computer Science ) \n \n - Cité scolaire Françoise Combes, Montpellier";
 });
+ 
