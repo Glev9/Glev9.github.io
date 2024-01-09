@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+
+
+<!-- Mirrored from p5x.wanmei.com/net/sercret/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 30 Nov 2023 16:22:39 GMT -->
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="description" content="《女神异闻录：夜幕魅影》是由SEGA正版授权，ATLUS深度参与，完美世界游戏打造的《女神异闻录5》首款手游。本作基于P5的世界观设定展开故事，在深度还原原作潮酷炫风格的基础上，由全新角色和全新剧情带来全新的精彩体验！" />
+    <meta name="keywords" content="女神异闻录：夜幕魅影,女神异闻录手游,女神异闻录5,P5X,P5,JRPG,角色扮演,日式角色扮演,Joker Persona" />
+    <title>《女神异闻录：夜幕魅影》概念站</title>
+    <link rel="stylesheet" type="text/css" href="../../../static.games.wanmei.com/public/style/animate.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/animejs.css" />
+    <link rel="stylesheet" type="text/css" href="css/master1b26.css?v2" />
+    <link rel="stylesheet" type="text/css" href="css/pintu.css" />
+    <script type="text/javascript" src="../../../static.games.wanmei.com/public/js/isMobile.js"></script>
+    <script>
+        var is_mobile = isMobile();
+        var is_ipad = /ipad/i.test(navigator.userAgent)
+        if(is_mobile && !is_ipad){
+            window.location.href = 'm/index.html';
+        }
+    </script> 
+</head>
+
+<body>
+    <audio src="https://gamesvmg.wmupd.com/webops/p5_currency.mp3" id="click_music"></audio>
+    <audio src="https://gamesvmg.wmupd.com/webops/p5_thefristbgm_20220829.mp3" loop id="bg_music"></audio>
+    <audio src="https://gamesvmg.wmupd.com/webops/p5_gamebgm_20220829.mp3" loop id="game_music"></audio>
+    <div class="wrap">
+        <div class="loading_box">
+            <div class="loading_icon"></div>
+            <div class="loading_mask">
+                <div class="loading_color"></div>
+            </div>
+            <!-- <div class="bloomlight"></div> -->
+        </div>
+        <div class="subtitle_box">
+            <div class="subtitle_bg"></div>
+            <div class="subtitle01_mask">
+                <div class="subtitle01"></div>
+            </div>
+            <div class="subtitle02_mask">
+                <div class="subtitle02"></div>
+            </div>
+            <div id="jixu">
+                <div class="shape layer" data-depth="0.15"></div>
+                <div class="jixu01 layer" data-depth="0.20"></div>
+                <div class="jixu02 layer" data-depth="0.20">
+                    <svg class="tuxing" width="210" height="130" viewBox="0 0 210 130">
+                        <g fill="currentColor" fill-rule="evenodd">
+                            <polygon class="polymorph" points="191 42 48 110 0 56 176 0 191 42"></polygon>
+                        </g>
+                    </svg>
+                </div>
+                <div class="jixu03 layer" data-depth="0.10"></div>
+                <div class="jixu04 layer" data-depth="0.12"></div>
+            </div>
+            <a href="javascript:;" class="jixu_btn"></a>
+        </div>
+        <div class="main_box">
+            <!-- <div class="page_mask"></div> -->
+            <div class="qq_qun">
+                <img src="images/shequ_ewm.png" class="shequn_ewm">
+            </div>
+            <ul class="sns_box">
+                <li class="qq_icon">
+                    <div class="qq_item animated bounceIn">
+                        <p>1群：89423754</p>
+                        <p>2群：43565467</p>
+                        <p>3群：24356798</p>
+                    </div>
+                </li>
+                <li class="weixin_icon">
+                    <div class="weixin_pop"></div>
+                </li>
+                <li class="douliu_icon"></li>
+                <li class="tieba_icon"></li>
+                <li class="bili_icon"></li>
+            </ul>
+            <div class="music" id="musicBtn"><img src="images/music_pause.png" alt=""></div>
+            <div id="pixi_box">
+                <div class="pixi_bg1 layer" data-depth="0.02">
+
+                    <!-- 电视点亮 -->
+                    <div class="tv_view"></div>
+                    <!-- 拼图碎片按钮 -->
+
+                    <div class="shard02 shard_card">
+
+                    </div>
+                    <div class="shard03 shard_card">
+
+                    </div>
+                    <div class="shard04 shard_card">
+                        
+                    </div>
+                    <!-- 吧台箱子 -->
+                    <div class="pixiang2"></div>
+                </div>
+                <div class="pixi_bg2 layer" data-depth="0.04">
+                    <!-- pad -->
+                    <div class="pad_icon">
+                        <span></span>
+                    </div>
+                    <!-- 拼图碎片按钮 -->
+                    
+                    <div class="shard01 shard_card">
+                        <div class="star01"></div>
+                        <div class="star_info1"></div>
+                    </div>
+                    <!-- 杂志 -->
+                    <div class="zazhi">
+                        <span></span>
+                    </div>
+                    <!-- 拼图卡片 -->
+                    <div class="pin_card">
+                        <span></span>
+                    </div>
+                    <!-- 返回箱子2 -->
+                    <div class="case_hot">
+                        <span></span>
+                    </div>
+                </div>
+
+                <!-- pad-星星标记 -->
+                <div class="pad_star">
+                    <span></span>
+                    <div class="pad_info"></div>
+                </div>
+                <!-- 电视-星星标记 -->
+                <div class="video_star_box btn_pop_v" vsrc="https://gamesvmg.wmupd.com/webops/p5x_sercret_20230228.mp4">
+                    <div class="video_star"></div>
+                    <div class="tv_info"></div>
+                </div>
+                <div class="shard02 shard_card">
+                    <div class="star01"></div>
+                    <div class="star_info1"></div>
+                </div>
+                <div class="shard03 shard_card">
+                    <div class="star01"></div>
+                    <div class="star_info1"></div>
+                </div>
+                <div class="shard04 shard_card">
+                    <div class="star01"></div>
+                    <div class="star_info1"></div>
+                </div>
+            </div>
+
+            <div class="dialog_box dialog_box1">
+                <a href="javascript:;" class="jixu2_btn"></a>
+                <div class="dialog_arrow"></div>
+                <div class="dialog_item">
+                    <img src="images/dialog1.png" class="dialog1">
+                </div>
+            </div>
+            <!-- 碎片对话 -->
+            <div class="dialog_box dialog_box1-1">
+                <a href="javascript:;" class="jixu2_btn"></a>
+                <div class="dialog_arrow"></div>
+                <div class="dialog_item">
+                    <img src="images/dialog2.png" class="dialog1">
+                </div>
+                <div class="pic_kuang">
+                    <img src="images/dialog_pic1.png">
+                </div>
+                <div class="share_tip2"></div>
+            </div>
+            <!-- <div class="dialog_box dialog_box1-2">
+                <a href="javascript:;" class="jixu2_btn"></a>
+                <div class="dialog_arrow"></div>
+                <div class="dialog_item">
+                    <img src="images/dialog1-2.png" class="dialog1">
+                </div>
+                <div class="pic_kuang">
+                    <img src="images/dialog_pic2.png">
+                </div>
+                <div class="share_tip"></div>
+            </div>
+            <div class="dialog_box dialog_box1-3">
+                <a href="javascript:;" class="jixu2_btn"></a>
+                <div class="dialog_arrow"></div>
+                <div class="dialog_item">
+                    <img src="images/dialog1-3.png" class="dialog1">
+                </div>
+                <div class="pic_kuang">
+                    <img src="images/dialog_pic3.png">
+                </div>
+                <div class="share_tip"></div>
+            </div>
+            <div class="dialog_box dialog_box1-4">
+                <a href="javascript:;" class="jixu2_btn"></a>
+                <div class="dialog_arrow"></div>
+                <div class="dialog_item">
+                    <img src="images/dialog1-4.png" class="dialog1">
+                </div>
+                <div class="pic_kuang">
+                    <img src="images/dialog_pic4.png">
+                </div>
+                <div class="share_tip"></div>
+            </div> -->
+            <div class="dialog_box dialog_box2">
+                <a href="javascript:;" class="jixu2_btn"></a>
+                <div class="dialog_arrow"></div>
+                <div class="dialog_item">
+                    <img src="images/dialog1-2.png" class="dialog1">
+                </div>
+                <div class="pic_kuang">
+                    <img src="images/dialog_pic2.png">
+                </div>
+                <div class="share_tip2"></div>
+            </div>
+            <!-- 视频对话 -->
+            <div class="dialog_box dialog_box3">
+                <a href="javascript:;" class="jixu2_btn"></a>
+                <div class="dialog_arrow"></div>
+                <div class="dialog_item">
+                    <img src="images/dialog13.png" class="dialog1">
+                </div>
+            </div>
+            <!-- 开锁对话 -->
+            <div class="dialog_box dialog_box4">
+                <a href="javascript:;" class="jixu2_btn"></a>
+                <div class="dialog_arrow"></div>
+                <div class="dialog_item">
+                    <img src="images/dialog7.png" class="dialog4">
+                </div>
+            </div>
+            <!-- 开箱对话 -->
+            <div class="dialog_box dialog_box5">
+                <a href="javascript:;" class="jixu2_btn"></a>
+                <div class="dialog_arrow"></div>
+                <div class="dialog_item">
+                    <img src="images/dialog8.png" class="dialog5">
+                </div>
+            </div>
+            <div class="dialog_box dialog_box5-2">
+                <a href="javascript:;" class="jixu2_btn"></a>
+                <div class="dialog_arrow"></div>
+                <div class="dialog_item">
+                    <img src="images/dialog9.png" class="dialog5">
+                </div>
+            </div>
+            <!-- 拼图对话 -->
+            <div class="dialog_box dialog_box6">
+                <a href="javascript:;" class="jixu2_btn"></a>
+                <div class="dialog_arrow"></div>
+                <div class="dialog_item">
+                    <img src="images/dialog11.png" class="dialog6">
+                </div>
+            </div>
+            <!-- 填字游戏对话 -->
+            <div class="dialog_box dialog_box7">
+                <a href="javascript:;" class="jixu2_btn"></a>
+                <div class="dialog_arrow"></div>
+                <div class="dialog_item">
+                    <img src="images/dialog6.png" class="dialog7">
+                </div>
+            </div>
+            <!-- 再找找线索 -->
+            <div class="dialog_box dialog_box11">
+                <a href="javascript:;" class="jixu2_btn"></a>
+                <div class="dialog_arrow"></div>
+                <div class="dialog_item">
+                    <img src="images/dialog18.png" class="dialog11">
+                </div>
+            </div>
+            <!-- 主角图 -->
+            <div class="dialog_box dialog_box8">
+                <a href="images/share_img02.jpg" class="share_piclink" target="_blank"></a>
+                <img src="images/mainrole_pic.png" class="mainrole_pic">
+                <a href="javascript:;" class="jixu2_btn"></a>
+                <div class="dialog_arrow"></div>
+                <div class="dialog_item">
+                    <img src="images/dialog14.png" class="dialog8">
+                </div>
+                <div class="share_tip"></div>
+            </div>
+            <!-- 宫殿图 -->
+            <div class="dialog_box dialog_box9">
+                <a href="images/share_img03.jpg" class="share_piclink" target="_blank"></a>
+                <div class="case_pic">
+                    <img src="images/case_on.png" class="case_on">
+                    <div class="gongdian_pic">
+                        <img src="images/gongdian_pic6654.png?v1">
+                    </div>
+                </div>
+                <a href="javascript:;" class="jixu2_btn"></a>
+                <div class="dialog_arrow"></div>
+                <div class="dialog_item">
+                    <img src="images/dialog17.png" class="dialog9">
+                </div>
+                <div class="share_tip2"></div>
+            </div>
+            <!-- <div class="dialog_box dialog_box9-2">
+                <img src="images/gongdian_pic.png" class="gongdian_pic">
+                <a href="javascript:;" class="jixu2_btn"></a>
+                <div class="dialog_arrow"></div>
+                <div class="dialog_item">
+                    <img src="images/dialog15.png" class="dialog9">
+                </div>
+            </div> -->
+            <!-- 怪盗图 -->
+            <div class="dialog_box dialog_box10">
+                <a href="images/share_img046654.jpg?v1" class="share_piclink" target="_blank"></a>
+                <div class="guaidao_pic">
+                    <img src="images/guaidao_pic1.png">
+                </div>
+                <a href="javascript:;" class="jixu2_btn"></a>
+                <div class="dialog_arrow"></div>
+                <div class="dialog_item">
+                    <img src="images/dialog16-1.png" class="dialog10">
+                </div>
+                <div class="share_tip"></div>
+            </div>
+            <!-- 怪盗图2 -->
+            <!-- <div class="dialog_box dialog_box13">
+                <img src="images/guaidao_pic2.png" class="guaidao_pic2">
+                <a href="javascript:;" class="jixu2_btn"></a>
+                <div class="dialog_arrow"></div>
+                <div class="dialog_item">
+                    <img src="images/dialog16-2.png" class="dialog13">
+                </div>
+                <div class="share_tip2"></div>
+            </div> -->
+            <!-- 碎片图 -->
+            <div class="dialog_box dialog_box12">
+                <a href="images/share_img01.jpg" class="suipian_pic" target="_blank"><img src="images/suipian_pic.png"></a>
+                <a href="javascript:;" class="jixu2_btn"></a>
+                <div class="dialog_arrow"></div>
+                <div class="dialog_item">
+                    <img src="images/dialog19.png" class="dialog12">
+                </div>
+
+                <a href="images/share_img01.jpg" target="_blank" class="share_tip"></a>
+            </div>
+            <!-- 主角分享图 -->
+            <div class="pop_fixed" id="role_share">
+                <div class="pop_cont_bg">
+                    <a href="javascript:;" class="closeBtn"></a>
+                    <div class="popMain">
+                        <a href="images/share_img02.jpg" target="_blank"><img src="images/share_img02.jpg"></a>
+                    </div>
+                    <a href="images/share_img02.jpg" target="_blank" class="share_tip"></a>
+                </div>
+            </div>
+            <!-- 宫殿分享图 -->
+            <div class="pop_fixed" id="gongdian_share">
+                <div class="pop_cont_bg">
+                    <a href="javascript:;" class="closeBtn"></a>
+                    <div class="popMain">
+                        <a href="images/share_img03.jpg" target="_blank"><img src="images/share_img03.jpg"></a>
+                    </div>
+                    <a href="images/share_img03.jpg" target="_blank" class="share_tip"></a>
+                </div>
+            </div>
+            <!-- 怪盗分享图 -->
+            <div class="pop_fixed" id="guaidao_share">
+                <div class="pop_cont_bg">
+                    <a href="javascript:;" class="closeBtn"></a>
+                    <div class="popMain">
+                        <a href="images/share_img04.jpg" target="_blank"><img src="images/share_img04.jpg"></a>
+                    </div>
+                    <a href="images/share_img04.jpg" target="_blank" class="share_tip"></a>
+                </div>
+            </div>
+            <!-- 碎片分享图 -->
+            <!-- <div class="pop_fixed" id="card_share">
+                <div class="pop_cont_bg">
+                    <a href="javascript:;" class="closeBtn"></a>
+                    <div class="popMain">
+                        <img src="images/shard_pic.png">
+                    </div>
+                    <div class="share_tip"></div>
+                </div>
+            </div> -->
+
+            <!-- 地面箱子 -->
+            <div class="pixiang"></div>
+
+            <!-- 碎片游戏弹窗 -->
+            <div class="pop_fixed" id="shard_share">
+                <div class="pop_cont_bg">
+                    <a href="javascript:;" class="giveup_btn"></a>
+                    <a href="javascript:;" class="submit_btn"></a>
+                    <div class="popMain">
+                        <div class="pin pin_img1"></div>
+                        <div class="pin pin_img2"></div>
+                        <div class="pin pin_img3"></div>
+                        <div class="pin pin_img4"></div>
+                        <div class="shard_img shard_img1"></div>
+                        <div class="shard_img shard_img2"></div>
+                        <div class="shard_img shard_img3"></div>
+                        <div class="shard_img shard_img4"></div>
+                    </div>
+                    <!-- <div class="share_tip"></div> -->
+                    <div class="pin_false"></div>
+                    <div class="cursor_icon"></div>
+                </div>
+
+            </div>
+            <!-- 开锁工具 -->
+            <div class="keys_icon"></div>
+            <!-- 杂志-星星标记 -->
+            <div class="magazine_star">
+                <span></span>
+                <div class="magazine_info"></div>
+            </div>
+            <!-- 开锁-星星标记 -->
+            <div class="key_star">
+                <span></span>
+                <div class="lock_info"></div>
+            </div>
+            <!-- 皮箱-星星标记 -->
+            <div class="case_star">
+                <span></span>
+                <div class="case_info"></div>
+            </div>
+
+            <!-- 填字游戏 -->
+            <div class="pop_fixed" id="text_game">
+                <div class="pop_cont_bg">
+                    <div class="popMain2">
+                        <div class="text_blank_bg">
+                            <span class="f1 tip"></span>
+                            <span class="f2 tip"></span>
+                            <span class="h h1-1"></span>
+                            <span class="h h1-2"></span>
+                            <span class="h h1-3 tip"></span>
+                            <span class="h h2-1 an"></span>
+                            <span class="h h2-2 an"></span>
+                            <span class="h h2-3 tip an"></span>
+                            <span class="h h2-4 an"></span>
+                            <span class="h h2-5 an"></span>
+                            <span class="h h2-6 an"></span>
+                            <span class="h h2-7 an"></span>
+                            <span class="h h2-8 an"></span>
+                            <span class="h h3-1"></span>
+                            <span class="h h4-1 tip"></span>
+                            <span class="h h5-1"></span>
+                            <span class="h h5-2"></span>
+                            <span class="h h6-1 tip"></span>
+                            <span class="h h6-2 tip"></span>
+                            <span class="h h6-3"></span>
+                            <span class="h h7-1"></span>
+                        </div>
+                        <div class="text_box">
+                            <div class="text_title"></div>
+                            <ul class="text_list">
+                                <li class="">
+                                    <span class="">
+                                        <img src="images/r1.png">
+                                    </span>
+                                    <span class="">
+                                        <img src="images/r2.png">
+                                    </span>
+                                    <span><img src="images/r3.png"></span>
+                                    <span><img src="images/r4.png"></span>
+                                    <span><img src="images/r5.png"></span>
+                                    <span><img src="images/r6.png"></span>
+                                    <span><img src="images/r7.png"></span>
+                                    <span><img src="images/r8.png"></span>
+                                    <span><img src="images/r9.png"></span>
+                                    <span><img src="images/r10.png"></span>
+                                    <span><img src="images/r11.png"></span>
+                                    <span><img src="images/r12.png"></span>
+                                    <span><img src="images/r13.png"></span>
+                                    <span><img src="images/r14.png"></span>
+                                    <span><img src="images/r15.png"></span>
+                                    <span><img src="images/r16.png"></span>
+                                    <span><img src="images/r17.png"></span>
+                                    <span><img src="images/r18.png"></span>
+                                    <span><img src="images/r19.png"></span>
+                                    <span><img src="images/r20.png"></span>
+                                </li>
+                            </ul>
+                            <div class="vertical">
+                                纵：<span></span>
+                            </div>
+                            <div class="horizontal">
+                                横：<span></span>
+                            </div>
+                        </div>
+                        <div class="text_bottom_btn">
+                            <a href="javascript:;" class="delate_btn"></a>
+                            <a href="javascript:;" class="repeat_btn"></a>
+                            <a href="javascript:;" class="giveup_btn"></a>
+                            <a href="javascript:;" class="submit_btn"></a>
+                        </div>
+                        <div class="text_false"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- 开锁游戏 -->
+            <div class="pop_fixed" id="key_game">
+                <div class="pop_cont_bg">
+                    <div class="popMain2">
+                        <div class="case_left">
+                            <div class="case_icon"></div>
+                            <div class="lock_tip"></div>
+                        </div>
+                        <div class="case_right">
+                            <div class="password password01">
+                                <div class="letter letter1_1">
+                                    <div class="letter_item">
+                                        <img class="zimu1_1 on" data-zimu="b" src="images/black_b.png">
+                                        <img class="zimu1_2" data-zimu="p" src="images/black_p.png">
+                                        <img class="zimu1_3" data-zimu="p" src="images/black_p.png">
+                                        <img class="zimu1_1" data-zimu="b" src="images/black_b.png">
+                                        <img class="zimu1_2" data-zimu="p" src="images/black_p.png">
+                                        <img class="zimu1_3" data-zimu="p" src="images/black_p.png">
+                                    </div>
+                                </div>
+                                <div class="letter letter1_2">
+                                    <div class="letter_item">
+                                        <img class="zimu1_1 on" data-zimu="e" src="images/black_e.png">
+                                        <img class="zimu1_2" data-zimu="r" src="images/black_r.png">
+                                        <img class="zimu1_3" data-zimu="e" src="images/black_e.png">
+                                        <img class="zimu1_1" data-zimu="e" src="images/black_e.png">
+                                        <img class="zimu1_2" data-zimu="r" src="images/black_r.png">
+                                        <img class="zimu1_3" data-zimu="e" src="images/black_e.png">
+                                    </div>
+                                </div>
+                                <div class="letter letter1_3">
+                                    <div class="letter_item">
+                                        <img class="zimu1_1 on" data-zimu="r" src="images/black_r.png">
+                                        <img class="zimu1_2" data-zimu="e" src="images/black_e.png">
+                                        <img class="zimu1_3" data-zimu="r" src="images/black_r.png">
+                                        <img class="zimu1_1" data-zimu="r" src="images/black_r.png">
+                                        <img class="zimu1_2" data-zimu="e" src="images/black_e.png">
+                                        <img class="zimu1_3" data-zimu="r" src="images/black_r.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="password password02">
+                                <div class="letter letter2_1">
+                                    <div class="letter_item">
+                                        <img class="zimu1_1 on" data-zimu="s" src="images/black_s.png">
+                                        <img class="zimu1_2" data-zimu="5" src="images/black_5.png">
+                                        <img class="zimu1_3" data-zimu="s" src="images/black_s.png">
+                                        <img class="zimu1_1" data-zimu="s" src="images/black_s.png">
+                                        <img class="zimu1_2" data-zimu="5" src="images/black_5.png">
+                                        <img class="zimu1_3" data-zimu="s" src="images/black_s.png">
+                                    </div>
+                                </div>
+                                <div class="letter letter2_2">
+                                    <div class="letter_item">
+                                        <img class="zimu1_1 on" data-zimu="o" src="images/black_o.png">
+                                        <img class="zimu1_2" data-zimu="o" src="images/black_o.png">
+                                        <img class="zimu1_3" data-zimu="o" src="images/black_o.png">
+                                        <img class="zimu1_1" data-zimu="o" src="images/black_o.png">
+                                        <img class="zimu1_2" data-zimu="o" src="images/black_o.png">
+                                        <img class="zimu1_3" data-zimu="o" src="images/black_o.png">
+                                    </div>
+                                </div>
+                                <div class="letter letter2_3">
+                                    <div class="letter_item">
+                                        <img class="zimu1_1 on" data-zimu="u" src="images/black_u.png">
+                                        <img class="zimu1_2" data-zimu="a" src="images/black_a.png">
+                                        <img class="zimu1_3" data-zimu="n" src="images/black_n.png">
+                                        <img class="zimu1_1" data-zimu="u" src="images/black_u.png">
+                                        <img class="zimu1_2" data-zimu="a" src="images/black_a.png">
+                                        <img class="zimu1_3" data-zimu="n" src="images/black_n.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="password password03">
+                                <div class="letter letter3_1">
+                                    <div class="letter_item">
+                                        <img class="zimu1_1 on" data-zimu="n" src="images/black_n.png">
+                                        <img class="zimu1_2" data-zimu="n" src="images/black_n.png">
+                                        <img class="zimu1_3" data-zimu="a" src="images/black_a.png">
+                                        <img class="zimu1_1" data-zimu="n" src="images/black_n.png">
+                                        <img class="zimu1_2" data-zimu="n" src="images/black_n.png">
+                                        <img class="zimu1_3" data-zimu="a" src="images/black_a.png">
+                                    </div>
+                                </div>
+                                <div class="letter letter3_2">
+                                    <div class="letter_item">
+                                        <img class="zimu1_1 on" data-zimu="5" src="images/black_5.png">
+                                        <img class="zimu1_2" data-zimu="h" src="images/black_h.png">
+                                        <img class="zimu1_3" data-zimu="5" src="images/black_5.png">
+                                        <img class="zimu1_1" data-zimu="5" src="images/black_5.png">
+                                        <img class="zimu1_2" data-zimu="h" src="images/black_h.png">
+                                        <img class="zimu1_3" data-zimu="5" src="images/black_5.png">
+                                    </div>
+                                </div>
+                                <div class="letter letter3_3">
+                                    <div class="letter_item">
+                                        <img class="zimu1_1 on" data-zimu="x" src="images/black_x.png">
+                                        <img class="zimu1_2" data-zimu="a" src="images/black_a.png">
+                                        <img class="zimu1_3" data-zimu="x" src="images/black_x.png">
+                                        <img class="zimu1_1" data-zimu="x" src="images/black_x.png">
+                                        <img class="zimu1_2" data-zimu="a" src="images/black_a.png">
+                                        <img class="zimu1_3" data-zimu="x" src="images/black_x.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cursor_icon"></div>
+                        </div>
+                        <div class="key_bottom_btn">
+                            <a href="javascript:;" class="giveup_btn"></a>
+                            <a href="javascript:;" class="open_btn"></a>
+                        </div>
+                        <!-- 成功提示 -->
+                        <div class="lock_success"></div>
+                        <!-- 失败提示 -->
+                        <div class="lock_false"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- 拼图游戏 -->
+            <div class="pop_fixed" id="picBox">
+                <div class="pop_cont_bg">
+                    <div class="popMain2">
+                        <div id="play_area"></div>
+                        <div class="pic_bottom_btn">
+                            <!-- <a href="javascript:;" class="oneback_btn"></a> -->
+                            <a href="javascript:;" class="repeat_btn"></a>
+                            <a href="javascript:;" class="giveup_btn"></a>
+                            <a href="javascript:;" class="submit_btn"></a>
+                        </div>
+                        <!-- 失败提示 -->
+                        <div class="picpin_false"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- 进入倒计时 -->
+            <div class="entertime_box" id="entertime_bg">
+                <div class="texture_bg"></div>
+                <div class="logo_icon layer" data-depth="0.10"></div>
+                <div class="wake_up layer" data-depth="0.16">
+                    <a href="javascript:;" vsrc="https://gamesvmg.wmupd.com/webops/p5x_secretpv_20230315.mp4"></a>
+                </div>
+            </div>            
+            <!-- 倒计时缩小 -->
+            <div class="little_countdown">
+                
+            </div>
+            <!-- 侧边导航 -->
+            <ul class="nav_box">
+                <li class="nav01">拼图碎片</li>
+                <li class="nav02">翻阅杂志</li>
+                <li class="nav03">开锁宝箱</li>
+                <li class="nav04">检查台面</li>
+            </ul>
+            <!--弹窗：视频-->
+            <div class="pop_fixed" id="pop_video">
+                <div class="pop_video_cont">
+                    <div class="share_tip"></div>
+                    <span class="icon_close icon_close1" id="close_video"></span>
+                    <div class="pop_v_box">
+                        <video id="pop_v" controls src="https://gamesvmg.wmupd.com/webops/p5x_sercret_20230228.mp4"></video>
+                    </div>
+                </div>
+            </div>
+            <!--弹窗：视频2-->
+            <div class="pop_fixed" id="pop_video2">
+                <div class="pop_video_cont">
+                    <div class="share_tip"></div>
+                    <span class="icon_close icon_close2" id="close_video2"></span>
+                    <div class="pop_v_box">
+                        <video id="pop_v2" controls src="https://gamesvmg.wmupd.com/webops/p5x_secretpv_20230315.mp4"></video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 遮罩 -->
+    <div class="prompt"></div>
+    <script type="text/javascript" src="../../../static.games.wanmei.com/public/js/jq_183.js"></script>
+    <script type="text/javascript" src="../../../static.games.wanmei.com/games/xxa/jquery.cookie.js"></script>
+    <script type="text/javascript" src="../../../static.games.wanmei.com/public/js/stat.js"></script>
+    <script type="text/javascript" src="js/anime.2.2.0.js"></script>
+    <script type="text/javascript" src="js/jquery.parallax.js"></script>
+    <script type="text/javascript" src="js/pixi.min.js"></script>
+    <script type="text/javascript" src="js/pintu.js"></script>
+    <script type="text/javascript" src="js/time.js"></script>
+    <script type="text/javascript" src="js/index43a0.js?v3"></script>
+
+</body>
+
+
+<!-- Mirrored from p5x.wanmei.com/net/sercret/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 30 Nov 2023 16:23:03 GMT -->
+</html>

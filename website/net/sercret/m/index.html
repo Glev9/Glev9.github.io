@@ -1,0 +1,577 @@
+<!doctype html><html>
+<!-- Mirrored from p5x.wanmei.com/net/sercret/m/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 30 Nov 2023 16:24:21 GMT -->
+<head><meta charset="utf-8"><title>《女神异闻录：夜幕魅影》概念站</title><meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/><meta name="apple-mobile-web-app-capable" content="yes"/><meta name="full-screen" content="true"/><meta name="screen-orientation" content="portrait"/><meta name="x5-fullscreen" content="true"/><meta name="360-fullscreen" content="true"/><style>html,
+        body {
+            -ms-touch-action: none;
+            background: #000000;
+            padding: 0;
+            border: 0;
+            margin: 0;
+            height: 100%;
+        }
+
+        .abs-pos {
+            position: absolute;
+        }
+
+        .div-strata {
+            display: none;
+            transform-origin: 0% 0% 0px;
+        }
+
+        .upper-strata {
+            z-index: 300;
+        }
+
+        .img-click {
+            z-index: 2;
+            display: block;
+            opacity: 0;
+        }
+
+        #shareTipsPage {
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            overflow-y: scroll;
+            top: 0;
+            right: 0;
+            z-index: 1000;
+            background-color: rgba(0, 0, 0, 0.8);
+            display: none;
+        }
+
+        #shareTipsImg {
+            position: absolute;
+            width: 5.72rem;
+            height: 3.38rem;
+            top: 0;
+            right: 0;
+        }
+
+        #qqGroup_btn {
+            position: absolute;
+            right: 9rem;
+            bottom: 0.25rem;
+            width: 0.98rem;
+            height: 0.55rem;
+            z-index: 1999;
+            display: block;
+        }
+
+        #qqGroup_item {
+            width: 3.1rem;
+            height: 2.65rem;
+            background: url(resource/assets/gameImg/gameCommon/mainRoomQqunBgImg.png) no-repeat;
+            background-size: 100% 100%;
+            position: absolute;
+            right: 7.4rem;
+            bottom: 0.9rem;
+            z-index: 1999;
+            display: none;
+        }
+
+        #qqGroup_item p {
+            width: 100%;
+            padding-top: 0.4rem;
+            line-height: 0.2rem;
+            font-size: 0.018rem;
+            text-align: center;
+            color: #000;
+        }
+
+        #dingyhGroup_btn {
+            position: absolute;
+            right: 7.6rem;
+            bottom: 0.25rem;
+            width: 1.15rem;
+            height: 0.51rem;
+            z-index: 1999;
+            display: block;
+        }
+
+        #dingyhGroup_item {
+            width: 3.1rem;
+            height: 2.65rem;
+            background: url(resource/assets/gameImg/gameCommon/mainRoomQqunBgImg.png) no-repeat;
+            background-size: 100% 100%;
+            position: absolute;
+            right: 6rem;
+            bottom: 0.9rem;
+            z-index: 1999;
+            display: none;
+        }
+
+        #dyhEwm {
+            width: 1.6rem;
+            height: 1.6rem;
+            position: absolute;
+            top: 15%;
+            left: 50%;
+            margin-left: -0.8rem;
+        }
+
+        #douliuGroup_btn {
+            position: absolute;
+            right: 6.4rem;
+            bottom: 0.25rem;
+            width: 0.97rem;
+            height: 0.51rem;
+            z-index: 1999;
+            display: block;
+        }
+
+        #tiebaGroup_btn {
+            position: absolute;
+            right: 5.2rem;
+            bottom: 0.25rem;
+            width: 0.97rem;
+            height: 0.51rem;
+            z-index: 1999;
+            display: block;
+        }
+
+        #biliGroup_btn {
+            position: absolute;
+            right: 3.7rem;
+            bottom: 0.25rem;
+            width: 1.23rem;
+            height: 0.55rem;
+            z-index: 1999;
+            display: block;
+        }
+
+        #SheQuGroup_btn {
+            position: absolute;
+            right: 2.1rem;
+            bottom: 0.25rem;
+            width: 1.35rem;
+            height: 0.51rem;
+            z-index: 1999;
+            display: block;
+        }
+
+        #audioPlay_btn {
+            position: absolute;
+            right: 0.6rem;
+            bottom: 0.25rem;
+            width: 1.3rem;
+            height: 0.49rem;
+            z-index: 1999;
+            display: block;
+        }
+
+        .iphoneTip {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: #000000;
+            z-index: 1998;
+            display: none;
+        }
+
+        .iphoneIcon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-left: -4.97rem;
+            width: 9.94rem;
+            height: 10.8rem;
+            transform: rotate(0deg);
+        }
+
+        .pop_fixed {
+            display: none;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 10;
+        }
+
+        .pop_video_cont {
+            position: absolute;
+            left: 50%;
+            top: 40%;
+            background: url(resource/assets/gameImg/videoImg/videoBgImg.png);
+            background-size: 100% 100%;
+        }
+
+        .pop_video_cont_ratate_0 {
+            width: 10.31rem;
+            height: 5.93rem;
+            margin: -2rem 0 0 -5.155rem;
+        }
+
+        .pop_video_cont_ratate_90 {
+            width: 20.62rem;
+            height: 11.86rem;
+            margin: -4rem 0 0 -10.31rem;
+            transform: rotate(90deg);
+        }
+
+        .share_tip {
+            width: 2.95rem;
+            height: 1.77rem;
+            position: absolute;
+            top: -0.8rem;
+            left: -0.75rem;
+            background: url(resource/assets/gameImg/videoImg/videoGetImg.html) no-repeat 0 0;
+            background-size: 100% 100%;
+            z-index: 10;
+        }
+
+        .icon_close {
+            position: absolute;
+            left: 50%;
+            background: url(resource/assets/gameImg/videoImg/videoBackBtn.png) no-repeat 0 0;
+            background-size: 100% 100%;
+            cursor: pointer;
+        }
+
+        .icon_close_ratate_0 {
+            margin-left: 4.4rem;
+            bottom: 4.5rem;
+            width: 0.58rem;
+            height: 0.56rem;
+        }
+
+        .icon_close_ratate_90 {
+            margin-left: 8.8rem;
+            bottom: -3.2rem;
+            width: 1.16rem;
+            height: 1.12rem;
+        }
+
+        .pop_v_box {
+            position: absolute;
+            overflow: hidden;
+        }
+
+        .pop_v_box_rotate_0 {
+            width: 8.7rem;
+            height: 4.82rem;
+            left: 0.4rem;
+            top: 0.6rem;
+        }
+
+        .pop_v_box_rotate_90 {
+            width: 17.47rem;
+            height: 9.64rem;
+            left: 0.5rem;
+            top: 0.5rem;
+        }
+
+        .pop_v_box video {
+            width: 100%;
+            height: 100%;
+        }</style></head><body><div class="audio"><audio id="bg_bgm" preload="load" autoplay="true" loop hidden="true"><source src="https://gamesvmg.wmupd.com/webops/p5_thefristbgm_20220829.mp3" type="audio/mpeg"></audio><audio id="crossWord_bgm" preload="load" loop hidden="true"><source src="https://gamesvmg.wmupd.com/webops/p5_gamebgm_20220829.mp3" type="audio/mpeg"></audio><audio preload="true" src="https://gamesvmg.wmupd.com/webops/p5_check.mp3" id="check_bgm"></audio><audio preload="true" src="https://gamesvmg.wmupd.com/webops/p5_confirm.mp3" id="confirm_bgm"></audio><audio preload="true" src="https://gamesvmg.wmupd.com/webops/p5_fail.mp3" id="fail_bgm"></audio><audio preload="true" src="https://gamesvmg.wmupd.com/webops/p5_ok_video.mp3" id="talk_bgm"></audio><audio preload="true" src="https://gamesvmg.wmupd.com/webops/p5_keymusic_20221101.mp3" id="openbox_bgm"></audio><audio preload="true" src="https://gamesvmg.wmupd.com/webops/p5_newclear.mp3" id="newclear_bgm"></audio><audio preload="true" src="https://gamesvmg.wmupd.com/webops/p5_currency.mp3" id="currency_bgm"></audio></div><div style="margin: auto;width: 100%;height: 100%;" class="egret-player" data-entry-class="Main" data-orientation="landscape" data-scale-mode="fixedHeight" data-frame-rate="60" data-content-width="1920" data-content-height="1080" data-show-paint-rect="false" data-multi-fingered="1" data-show-fps="false" data-show-log="false" data-show-fps-style="x:0,y:0,size:12,textColor:0xffffff,bgAlpha:0.9"></div><div class="iphoneTip" id="iphoneTip"><img class="iphoneIcon" src="resource/assets/gameImg/mainRoom/mainRoomIphoneTipsImg.png" alt=""></div><div class="pop_fixed" id="pop_video"><div class="pop_video_cont"><span class="icon_close icon_close1" id="close_video"></span><div class="pop_v_box"><video id="pop_v" controls src="#"></video></div></div></div><div id="upperStrata" style="width: 100%;height: 100%;top: 0;left: 0" class="abs-pos div-strata upper-strata"><div id="upperStrataDiv" style="display: block;width: 100%;height: 100%;top: 0;left: 0" class="abs-pos"><img id="haibao" class="abs-pos" src="#"/> <img id="gameGoBack" class="abs-pos img-click" src="resource/assets/gameImg/mainRoom/sharePaper/sharePaperGobackBtn.png"></div></div><img id="SheQuGroup_btn" class="on" src="resource/assets/gameImg/gameCommon/mainRoomSheQuBtn.png" alt=""> <img id="audioPlay_btn" class="on" src="resource/assets/gameImg/gameCommon/music_on.png" alt=""><script src="../../../../static.games.wanmei.com/public/js/jq_183.js"></script><script src="../../../../static.games.wanmei.com/public/js/stat.js"></script><script>//屏幕适应
+        (function (win, doc) {
+            if (!win.addEventListener) return;
+            var html = document.documentElement;
+            function setFont() {
+                var _rotate = true;
+                180 !== window.orientation && 0 !== window.orientation || (_rotate = false);
+                _rotate && window.innerWidth < window.innerHeight && (_rotate = false);
+                if (_rotate) {
+                    $(".pop_video_cont").addClass("pop_video_cont_ratate_0");
+                    $(".pop_video_cont").removeClass("pop_video_cont_ratate_90");
+
+                    $(".icon_close").addClass("icon_close_ratate_0");
+                    $(".icon_close").removeClass("icon_close_ratate_90");
+
+                    $(".pop_v_box").addClass("pop_v_box_rotate_0");
+                    $(".pop_v_box").removeClass("pop_v_box_rotate_90");
+                    document.getElementById("iphoneTip").style.display = "none";
+                } else {
+                    $(".pop_video_cont").addClass("pop_video_cont_ratate_90");
+                    $(".pop_video_cont").removeClass("pop_video_cont_ratate_0");
+
+                    $(".icon_close").addClass("icon_close_ratate_90");
+                    $(".icon_close").removeClass("icon_close_ratate_0");
+
+                    $(".pop_v_box").addClass("pop_v_box_rotate_90");
+                    $(".pop_v_box").removeClass("pop_v_box_rotate_0");
+                    document.getElementById("iphoneTip").style.display = "block";
+                }
+                var html = document.documentElement;
+                var k = 1920;
+                html.style.fontSize = html.clientWidth / k * 100 + "px";
+            }
+            setFont();
+            setTimeout(function () {
+                setFont();
+            }, 300);
+            doc.addEventListener('DOMContentLoaded', setFont, false);
+            win.addEventListener('resize', setFont, false);
+            win.addEventListener('load', setFont, false);
+            "onorientationchange" in window && window.addEventListener('orientationchange', setFont, false);
+            document.addEventListener("visibilitychange", setFont, false);
+        })(window, document);</script><script>$(function () {
+            // qq群
+            // document.getElementById("qqGroup_btn").style.display = "none";
+            // 订阅号
+            // document.getElementById("dingyhGroup_btn").style.display = "none";
+            // 逗留
+            // document.getElementById("douliuGroup_btn").style.display = "none";
+            // 贴吧
+            // document.getElementById("tiebaGroup_btn").style.display = "none";
+            // bilibili
+            // document.getElementById("biliGroup_btn").style.display = "none";
+            // 社区
+            document.getElementById("SheQuGroup_btn").style.display = "none";
+            // 音乐按钮
+            document.getElementById("audioPlay_btn").style.display = "none";
+
+            // 音乐播放
+            document.getElementById('bg_bgm').pause();
+            document.getElementById('crossWord_bgm').pause();
+            document.getElementById('check_bgm').pause();
+            document.getElementById('confirm_bgm').pause();
+            document.getElementById('fail_bgm').pause();
+            document.getElementById('talk_bgm').pause();
+            document.getElementById('openbox_bgm').pause();
+            document.getElementById('newclear_bgm').pause();
+            document.getElementById('currency_bgm').pause();
+
+            document.addEventListener("WeixinJSBridgeReady", function () {
+                document.getElementById('bg_bgm').pause();
+            });
+        })
+
+        // 文字游戏
+        var isCrossWordGame = false;
+        // 音乐播放中国呢
+        var isMusicPlaying = false;
+
+        var attr1 = document.createAttribute('src');
+        document.getElementById('bg_bgm').addEventListener("playing", function () { //播放状态Doing
+            isMusicPlaying = true; //播放状态
+            attr1.nodeValue = "resource/assets/gameImg/gameCommon/music_on.png";
+            document.getElementById('audioPlay_btn').setAttributeNode(attr1);
+            document.getElementById('audioPlay_btn').setAttribute('class', 'on')
+        });
+        document.getElementById('bg_bgm').addEventListener("pause", function () { //暂停状态Doing
+            isMusicPlaying = false; //暂停状态
+            attr1.nodeValue = "resource/assets/gameImg/gameCommon/music_off.png";
+            document.getElementById('audioPlay_btn').setAttributeNode(attr1);
+            document.getElementById('audioPlay_btn').setAttribute('class', '')
+        });
+
+        document.getElementById('audioPlay_btn').onclick = function () {
+            if (isMusicPlaying == true) { // 播放状态
+                pause();
+            } else {
+                play();
+            }
+        }
+        function play() {
+            // 文字游戏是否进行中
+            if (isCrossWordGame) {
+                // 关闭背景音乐
+                document.getElementById('bg_bgm').volume = 0.01;
+                document.getElementById('crossWord_bgm').play();
+            } else {
+                // 关闭背景音乐
+                document.getElementById('bg_bgm').volume = 1;
+                document.getElementById('bg_bgm').play();
+                document.getElementById('crossWord_bgm').pause();
+            }
+            isMusicPlaying = true; //播放状态
+            attr1.nodeValue = "resource/assets/gameImg/gameCommon/music_on.png";
+            document.getElementById('audioPlay_btn').setAttributeNode(attr1);
+            document.getElementById('audioPlay_btn').setAttribute('class', 'on')
+        }
+        function pause() {
+            document.getElementById('bg_bgm').pause();
+            document.getElementById('crossWord_bgm').pause();
+            isMusicPlaying = false; //暂停状态
+            attr1.nodeValue = "resource/assets/gameImg/gameCommon/music_off.png";
+            document.getElementById('audioPlay_btn').setAttributeNode(attr1);
+            document.getElementById('audioPlay_btn').setAttribute('class', '')
+        }
+
+        // 点击继续开始播放背景音乐
+        function goonPlayBgMusic() {
+            // 音乐按钮
+            document.getElementById("audioPlay_btn").style.display = "block";
+            document.getElementById('bg_bgm').volume = 1;
+            document.getElementById('bg_bgm').play();
+            // qq群
+            document.getElementById("SheQuGroup_btn").style.display = "block";
+        }
+
+        // 播放视频
+        var currVideoIndex = 1;
+        function playPopVideo(srcStr, index) {
+            // 当前播放视频
+            currVideoIndex = index;
+            // 关闭背景音乐
+            document.getElementById('bg_bgm').volume = 0.01;
+            // 显示视频
+            document.getElementById("pop_v").src = srcStr;
+            document.getElementById("pop_video").style.display = "block";
+            document.getElementById('pop_v').play();
+        }
+
+        // 关闭视频
+        $('#close_video').click(function () {
+            if (isMusicPlaying) {
+                document.getElementById('bg_bgm').volume = 1;
+            }
+            // 视频弹窗
+            document.getElementById('pop_v').pause();
+            document.getElementById("pop_video").style.display = "none";
+            // 发送事件
+            if (currVideoIndex == 1) {
+                egret.MainContext.instance.stage.dispatchEventWith(MainRoomView.VIDEO_ONE_PLAY_END);
+            } else if (currVideoIndex == 2) {
+                egret.MainContext.instance.stage.dispatchEventWith(MainRoomView.VIDEO_TWO_PLAY_END);
+            }
+        });
+
+        // 分享返回
+        document.getElementById("haibao").onclick = function (e) {
+            // 隐藏DIV
+            document.getElementById("upperStrata").style.display = "none";
+            // 发送事件
+            egret.MainContext.instance.stage.dispatchEventWith(GameShareView.VIEW_CLOSE);
+        };
+
+        // 官方社区
+        document.getElementById('SheQuGroup_btn').onclick = function () {
+            window.open('https://douliu.wanmei.com/circle.html?circleId=75');
+            //     if (document.getElementById("qqGroup_btn").style.display == "none") {
+            //         document.getElementById("qqGroup_btn").style.display = "block";
+            //         document.getElementById("dingyhGroup_btn").style.display = "block";
+            //         document.getElementById("douliuGroup_btn").style.display = "block";
+            //         document.getElementById("tiebaGroup_btn").style.display = "block";
+            //         document.getElementById("biliGroup_btn").style.display = "block";
+            //     } else {
+            //         document.getElementById("qqGroup_btn").style.display = "none";
+            //         document.getElementById("dingyhGroup_btn").style.display = "none";
+            //         document.getElementById("douliuGroup_btn").style.display = "none";
+            //         document.getElementById("tiebaGroup_btn").style.display = "none";
+            //         document.getElementById("biliGroup_btn").style.display = "none";
+            //         document.getElementById("qqGroup_item").style.display = "none";
+            //         document.getElementById("dingyhGroup_item").style.display = "none";
+            //     }
+        }
+
+        // qq群
+        // document.getElementById('qqGroup_btn').onclick = function () {
+        //     if (document.getElementById("qqGroup_item").style.display == "none") {
+        //         document.getElementById("qqGroup_item").style.display = "block";
+        //         document.getElementById("dingyhGroup_item").style.display = "none";
+        //     } else {
+        //         document.getElementById("qqGroup_item").style.display = "none";
+        //     }
+        // }
+
+        // 订阅号
+        // document.getElementById('dingyhGroup_btn').onclick = function () {
+        //     if (document.getElementById("dingyhGroup_item").style.display == "none") {
+        //         document.getElementById("dingyhGroup_item").style.display = "block";
+        //         document.getElementById("qqGroup_item").style.display = "none";
+        //     } else {
+        //         document.getElementById("dingyhGroup_item").style.display = "none";
+        //     }
+        // }
+
+        // 播放按钮音效
+        function TsPlayBgm(id) {
+            if (!isMusicPlaying) {
+                return;
+            }
+            let audio = document.getElementById(id);
+            if (audio == null || audio == undefined) {
+                return;
+            }
+            audio.play();
+        }
+        // 暂停按钮音效
+        function TsStopBgm(id) {
+            let audio = document.getElementById(id);
+            if (audio == null || audio == undefined) {
+                return;
+            }
+            audio.pause();
+        }
+
+        // 文字游戏中
+        function CrossWordGameBool(bool) {
+            isCrossWordGame = bool;
+            // 背景音乐播放中
+            if (isMusicPlaying) {
+                // 文字游戏是否进行中
+                if (isCrossWordGame) {
+                    // 关闭背景音乐
+                    document.getElementById('bg_bgm').volume = 0.01;
+                    document.getElementById('crossWord_bgm').play();
+                } else {
+                    // 关闭背景音乐
+                    document.getElementById('bg_bgm').volume = 1;
+                    document.getElementById('bg_bgm').play();
+                    document.getElementById('crossWord_bgm').pause();
+                }
+            }
+        }</script><script>var loadScript = function (list, callback) {
+            var loaded = 0;
+            var loadNext = function () {
+                loadSingleScript(list[loaded], function () {
+                    loaded++;
+                    if (loaded >= list.length) {
+                        callback();
+                    }
+                    else {
+                        loadNext();
+                    }
+                })
+            };
+            loadNext();
+        };
+
+        var loadSingleScript = function (src, callback) {
+            var s = document.createElement('script');
+            s.async = false;
+            s.src = src;
+            s.addEventListener('load', function () {
+                s.parentNode.removeChild(s);
+                s.removeEventListener('load', arguments.callee, false);
+                callback();
+            }, false);
+            document.body.appendChild(s);
+        };
+
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET.html', './manifest.json?v=' + Math.random(), true);
+        xhr.addEventListener("load", function () {
+            var manifest = JSON.parse(xhr.response);
+            var list = manifest.initial.concat(manifest.game);
+            loadScript(list, function () {
+                /**
+                 * {
+                 * "renderMode":, //Engine rendering mode, "canvas" or "webgl"
+                 * "audioType": 0 //Use the audio type, 0: default, 2: web audio, 3: audio
+                 * "antialias": //Whether the anti-aliasing is enabled in WebGL mode, true: on, false: off, defaults to false
+                 * "calculateCanvasScaleFactor": //a function return canvas scale factor
+                 * }
+                 **/
+                egret.runEgret({
+                    renderMode: "webgl", audioType: 0, calculateCanvasScaleFactor: function (context) {
+                        var backingStore = context.backingStorePixelRatio ||
+                            context.webkitBackingStorePixelRatio ||
+                            context.mozBackingStorePixelRatio ||
+                            context.msBackingStorePixelRatio ||
+                            context.oBackingStorePixelRatio ||
+                            context.backingStorePixelRatio || 1;
+                        return (window.devicePixelRatio || 1) / backingStore;
+                    }
+                });
+            });
+        });
+        xhr.send(null);</script></body>
+<!-- Mirrored from p5x.wanmei.com/net/sercret/m/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 30 Nov 2023 16:24:24 GMT -->
+</html>
