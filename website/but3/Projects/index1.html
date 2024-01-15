@@ -1,0 +1,106 @@
+<!DOCTYPE html>    
+<html>
+
+<head>
+       <meta charset="utf-8" />
+       <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+       <meta name="renderer" content="webkit|ie-comp|ie-stand">
+
+       <title>Portfolio : Bilan BUT3</title>
+       <link rel="stylesheet" type="text/css" href="../../style/style2.css" />
+       <link rel="stylesheet" type="text/css" href="../../style/but3.css" />
+</head>
+<body>
+       <div class="fixed_bg">
+       </div>
+
+       <div class="wrap_sub">
+              <div class="fixed_top">
+                     <div class="fixed_top_cont">
+                            <a href="../../index.html?anchor=cont2" class="top_nav n1"><span></span></a>
+                            <a href="../../index.html?anchor=cont3" class="top_nav n2"><span></span></a>
+                            <a href="../../index.html?anchor=cont4" class="top_nav n3"><span></span></a>
+                            <a href="../../index.html?anchor=cont5" class="top_nav n4"><span></span></a>
+                            <a href="../../index.html?anchor=cont6" class="top_nav n5"><span></span></a>
+                            
+                     </div>
+              </div>
+              <div class="wrap_list">
+                     <div class="newsTabs">
+                            <a href="../index.html" class="on">Projets</a>
+                            <a href="../QA/index.html" >Q&A</a>
+                            
+                     </div>
+                     <div class="article_cont">
+                            <div class="article_tit">SAE</div>
+                            <hr><br><br>
+                            <div class="article_text">
+                                   <p class="article_tit2">Description : </p>
+                                   <p style="text-align: left;">Ce projet intervient dans le contexte de la SAE de l'année 3 du BUT informatique (parcours déploiement d'applications communicantes et sécurisées). Il consistait à la base à installer un service de partage de données accessible via plusieurs machines et à créer un système de connexion centralisé fiable via OpenLDAP. Cependant, au fur et à mesure du temps, le projet à évolué. La demande finale était donc d'installer trois services (partage de données, base de données et un troisième au choix) avec un système de connexion centralisé via OpenLDAP ainsi qu'un système SSO, le tout sécurisé.</em><br/></p>
+                                   <br/>
+                                   <p class="article_tit2">Composantes essentielles : </p>
+                                   <p class="article_tit3">CE 1.01 | En respectant les besoins décrits par le client | Niveau nécessaire estimé : Expertise</p>
+                                   <p>Les besoins finaux du client étaient : "Installer un service de partage de données, base de données et un service au choix. Ces services devront être sécurisés et utiliseront OpenLDAP ainsi qu'un SSO pour l'authentification centralisée."</p>
+                                   <br>
+                                   <p style="text-align: center;"><img src="../../images/SAEimg/besoins.jpg" alt="besoins.jpg"/><br/></p>
+                                   <br/>
+                                   <p>Comme vous pouvez le voir sur l'image ci-dessus, nous avons fait en sorte que chacune des demandes du client soit respectée.</p>
+                                   <br/>
+                                   <p class="article_tit3">CE 3.01 | En sécurisant le système d'information & CE 3.02 | En appliquant les normes en vigueur et les bonnes pratiques de sécurité | Niveau nécessaire estimé : Maitrise</p>
+                                   <p> La sécurité est un élément essentiel pour un système d'information. En effet, si le système d'information n'est pas sécurisé, il est vulnérable aux attaques et aux intrusions.</p>
+                                   <br/>
+                                   <p style="text-align: center;">&nbsp;<img src="../../images/SAEimg/secu.jpg" alt="secu.jpg"/></p>
+                                   <br/>
+                                   <p> Pour ce projet, nous avons donc décidé d'implémenter plusieurs éléments de sécurité. Tout d'abord, nous avons mis en place un proxy avec Traefik qui permet de sécuriser les connexions aux différents services. Ensuite, nous avons mis en place un système de connexion centralisé via OpenLDAP et un SSO avec Keycloak. Nous avons enfin mis en place un système de secrets grâce à Docker et un système de sauvegarde grâce à Duplicati.</p>
+                                   <br>
+                                   <p class="article_tit3">CE 3.03 | En offrant une qualité de service optimale | Niveau nécessaire estimé : Maitrise</p>
+                                   <p> La qualité de service est un élément essentiel pour un client. C'est pour cela que nous avons décidé d'utiliser des services qui fonctionnent sur le web et qui sont donc accessibles depuis n'importe quel OS.</p>
+                                   <br>
+                                   <p style="text-align: center;"><img src="../../images/SAEimg/web.jpg" alt="web.jpg"/><br/></p>
+                                   <br>
+                                   <p class="article_tit3">CE 3.04 | En assurant la continuité d'activité | Niveau nécessaire estimé : Connaissance</p>
+                                   <p> La continuité d'activité est un élément essentiel pour un client. En effet, si le système d'information n'est pas disponible, le client ne peut pas travailler et donc perd de l'argent. Nous avons donc mis en place un système de sauvegarde pour faciliter la mise en place d'un PCA.</p>
+                                   <br>
+                                   <p style="text-align: center;"><img src="../../images/SAEimg/sauvegarde.jpg" alt="sauvegarde.jpg"/><br/></p>
+                                   <br>
+                                   <p class="article_tit3">CE 6.01 | En inscrivant sa démarche au sein d'une équipe pluridisciplinaire | Niveau nécessaire estimé : Maitrise</p>
+                                   <p>Le travail s'effectuant par groupes de 4, il est important de savoir inscrire sa démarche au sein de l'équipe. Pour cela j'ai personnellement joué le rôle de scrum master afin d'instaurer des réunions entre les membres permettant de mieux s'organiser.</p>
+                                   <br>
+                                   <p style="text-align: center;"><img src="../../images/SAEimg/discord.png" alt="discord.png"/><br/></p>
+                                   <br>
+                                   <p class="article_tit3">CE 6.04 | En développant une communication efficace et collaborative | Niveau nécessaire estimé : Expertise</p>
+                                   <p>Une communication efficace est extrêmement importante avec le client d'une part pour lequel des revues de sprint ont été organisés mais aussi avec les membres du groupe où on utilisait discord afin de communiquer simplement.</p>
+                                   <br>
+                                   <p style="text-align: center;"><img src="../../images/SAEimg/comm.png" alt="comm.png"/><br/></p>
+                                   <br>
+                                   <p class="article_tit2">Apprentissages critiques : </p>
+                                   <p class="article_tit3">AC 31.02 | Faire évoluer une application existante | Niveau nécessaire estimé : Expertise</p>
+                                   <p>Lors des revues de sprint, le client avait tendance à ajouter de nouvelles fonctionnalités à notre travail comme par exemple le SSO. Il était donc très important de modifier notre application.</p>
+                                   <br>
+                                   <p class="article_tit3">AC 33.01 | Créer des processus de traitement automatisés | Niveau nécessaire estimé : Maitrise</p>
+                                   <p>Pour un accès plus simple aux fonctionnalités, nous avons décidé d'en automatiser un certains nombre.</p>
+                                   <p style="text-align: center;"><img src="../../images/SAEimg/auto.jpg" alt="auto.jpg"/><br/></p>
+                                   <br>
+                                   <p class="article_tit3">AC 33.02 | Configurer un serveur et des services réseaux de manière avancée | Niveau nécessaire estimé : Expertise</p>
+                                   <p>Les services sont entièrement mis en place via docker</p>
+                                   <p style="text-align: center;"><img src="../../images/SAEimg/docker.jpg" alt="docker.jpg"/><br/></p>
+                                   <br>
+                                   <p class="article_tit3">AC 33.03 | Appliquer une politique de sécurité au niveau de l'infrastructure | Niveau nécessaire estimé : Maitrise</p>
+                                   <p>Un système de sauvegarde, un proxy, les secrets docker ainsi qu'un cluster pour la base de donnée ont été implémentés afin d'avoir une politique de sécurité efficace.</p>
+                                   <br>
+                                   <p class="article_tit3">AC 31.04 | Déployer et maintenir un réseau d'organisation en fonction des besoins | Niveau nécessaire estimé : Maitrise</p>
+                                   <p>Le principe de cette SAE était de configurer des services complexes dans le but d'améliorer le système d'onformation d'une organisation fictive.</p>
+                                   <br>
+                                   <p class="article_tit3">AC 36.04 | Accompagner le management de projet informatique | Niveau nécessaire estimé : Maitrise</p>
+                                   <p>Des revues de sprint étaient organisées régulièrement afin d'avoir un maximum de retour du client sur le projet.</p>
+                                   <br>
+
+                     </div>
+              </div>
+              <a class="go_top"></a>
+       </div>
+       <script type="text/javascript" src="../../js/jq_183.js"></script>
+	<script type="text/javascript" src="../../js/backgroundAnim.js"></script>
+</body>
+
+</html>

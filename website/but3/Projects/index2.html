@@ -1,0 +1,109 @@
+<!DOCTYPE html>    
+<html>
+
+<head>
+       <meta charset="utf-8" />
+       <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+       <meta name="renderer" content="webkit|ie-comp|ie-stand">
+
+       <title>Portfolio : Bilan BUT3</title>
+       <link rel="stylesheet" type="text/css" href="../../style/style2.css" />
+       <link rel="stylesheet" type="text/css" href="../../style/but3.css" />
+</head>
+<body>
+       <div class="fixed_bg">
+       </div>
+
+       <div class="wrap_sub">
+              <div class="fixed_top">
+                     <div class="fixed_top_cont">
+                            <a href="../../index.html?anchor=cont2" class="top_nav n1"><span></span></a>
+                            <a href="../../index.html?anchor=cont3" class="top_nav n2"><span></span></a>
+                            <a href="../../index.html?anchor=cont4" class="top_nav n3"><span></span></a>
+                            <a href="../../index.html?anchor=cont5" class="top_nav n4"><span></span></a>
+                            <a href="../../index.html?anchor=cont6" class="top_nav n5"><span></span></a>
+                            
+                     </div>
+              </div>
+              <div class="wrap_list">
+                     <div class="newsTabs">
+                            <a href="../index.html" class="on">Projets</a>
+                            <a href="../QA/index.html" >Q&A</a>
+                            
+                     </div>
+                     <div class="article_cont">
+                            <div class="article_tit">TD Sauvegarde</div>
+                            <hr><br><br>
+                            <div class="article_text">
+                                   <p class="article_tit2">Description : </p>
+                                   <p style="text-align: left;">Le projet consistait à créer une application client-server qui permet de sauvegarder des fichiers selon le choix de l'utilisateur<br/></p>
+                                   <br/>
+                                   <p class="article_tit2">Composantes essentielles : </p>
+                                   <p class="article_tit3">CE 1.01 | En respectant les besoins décrits par le client | Niveau nécessaire estimé : Expertise</p>
+                                   <p>Les besoins du client étaient : <br>
+                                          "Il s'agit d'une application client-serveur en réseau, qui doit satisfaire aux règles suivantes :
+                                          <br>- L'utilisateur choisi le nom du dossier à partir duquel il veut faire la sauvegarde, il entre l'adresse IP du
+                                          serveur et la sauvegarde démarre.
+                                          <br>- L'application cliente ne sauvegarde pas tous les fichiers du dossier, mais seulement ceux dont les propriétés
+                                          (suffixes) sont décrites dans un fichier de paramètres, prédéfini.
+                                          <br>- L'application, sauvegarde toute l'arborescence depuis le nom de dossier indiqué.
+                                          <br>- L'application doit être en mesure de détecter si une première sauvegarde a déjà été faite :
+                                          <br>o Si non, tous les fichiers correspondants aux critères seront envoyés au serveur
+                                          <br>o Si oui, on ne copie que les fichiers qui n'ont pas été sauvegardés ou qui ont été modifiés depuis la
+                                          dernière sauvegarde.
+                                          <br>En option :
+                                          <br>- Les flux de données transmis devront être sécurisés.
+                                          <br>- Les données sauvegardées coté serveur devront être chiffrées." </p>
+                                   <br>
+                                   <p style="text-align: center;"><img src="../../images/Saveimg/besoinsSave.png" alt="besoins.png"/><br/></p>
+                                   <br/>
+                                   <p>Les attentes du client ont entièrement été respectées. Chaque demande à été implémentés y compris les options.</p>
+                                   <br/>
+                                   <p class="article_tit3">CE 1.03 | En appliquant les principes algorithmiques | Niveau nécessaire estimé : Maitrise</p>
+                                   <p>Afin de chiffrer les données, on à utilisé un algorithme XOR assez simple car selon le client : "pas besoin de faire un algorithme très puissant je n'en ait pas besoin". L'envoi de fichiers est fragmentée afin de réaliser l'application la plus optimisée possible.</p>
+                                   <br>
+                                   <p style="text-align: center;"><img src="../../images/Saveimg/Xor.png" alt="Xor.png"/><br/></p>
+                                   <br/>
+                                   <p class="article_tit3">CE 1.04 | En veillant à la qualité du code et à sa doccumentation | Niveau nécessaire estimé : Expertise</p>
+                                   <p>Chaque partie du code à été commentée et optimisée afin d'avoir le meilleur résultat possible. Un fichier readme à été fait afin de faciliter l'utilisation de l'application par le client.</p>
+                                   <br/>
+                                   <p style="text-align: center;">&nbsp;<img src="../../images/Saveimg/comments.png" alt="comments.png"/></p>
+                                   <br/>
+                                   <p class="article_tit3">CE 1.06 | En choisissant les ressources techniques appropriés | Niveau nécessaire estimé : Maitrise</p>
+                                   <p>En créant une application sécurisée il faut choisir des ressources techniques adaptées comme des socket SSL afin de protéger les communications par exemple.</p>
+                                   <br>
+                                   <p style="text-align: center;"><img src="../../images/Saveimg/SSL.png" alt="SSL.png"/><br/></p>
+                                   <br/>
+                                   <p class="article_tit3">CE 3.01 | En sécurisant le système d'information | Niveau nécessaire estimé : Maitrise</p>
+                                   <p>La sauvegarde est une part très importante dans la sécurité d'un système d'information, il est donc tout naturel que créer une application de sauvegarde sécurisée fasse partie de cette CE.</p>
+                                   <br>
+                                   <p class="article_tit3">CE 3.02 | En appliquant les normes en vigeur et les bonnes pratiques architecturales et de sécurité | Niveau nécessaire estimé : Maitrise</p>
+                                   <p>Afin de faire une application de sauvegarde sécurisée il est important d'utiliser des protocoles de sécurité pour les envois de fichier au minimum (TLS en l'occurence).</p>
+                                   <br>
+                                   <p class="article_tit3">CE 3.03 | En offrant une qualité de service optimale | Niveau nécessaire estimé : Expertise</p>
+                                   <p>L'application à été pensée pour être la plus optimisée et simple d'utilisation possible dans le temps donné.</p>
+                                   <br>
+                                   <p style="text-align: center;"><img src="../../images/Saveimg/assist.png" alt="assist.png"/><br/></p>
+                                   <br>
+                                   <p class="article_tit3">CE 3.04 | En assurant la continuité d'activité | Niveau nécessaire estimé : Maitrise</p>
+                                   <p>L'application crée plusieurs versions d'un fichier si celui-ci à été modifié à une autre date que celle enregistrée permettant de pouvoir récupérer ce dernier avant même que celui-ci ne soit sauvegardé corrompu par exemple.</p>
+                                   <br>
+                                   <p style="text-align: center;"><img src="../../images/Saveimg/backup.png" alt="backup.jpg"/><br/></p>
+                                   <br/>
+                                   <p class="article_tit2">Apprentissages critiques : </p>
+                                   <p class="article_tit3">AC 31.01 | Choisir et implémenter des architectures adaptées | Niveau nécessaire estimé : Maitrise</p>
+                                   <p>Afin de créer l'application, nous avons dû penser une architecture la mieux adaptée possible.</p>
+                                   <br>
+                                   <p style="text-align: center;"><img src="../../images/Saveimg/schema.png" alt="schema.jpg"/><br/></p>
+                                   <p class="article_tit3">AC 33.03 | Appliquer une politique de sécurité au niveau de l'infrastructure | Niveau nécessaire estimé : Maitrise</p>
+                                   <p>L'application étant une application sécurisée, nous avons inclus toutes les sécurités nécessaires au bon fonctionnement de cette dernière.</p>
+                                   <br>
+                     </div>
+              </div>
+              <a class="go_top"></a>
+       </div>
+       <script type="text/javascript" src="../../js/jq_183.js"></script>
+	<script type="text/javascript" src="../../js/backgroundAnim.js"></script>
+</body>
+
+</html>
